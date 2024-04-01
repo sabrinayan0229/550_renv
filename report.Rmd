@@ -37,6 +37,7 @@ random_numbers3_quantiles <- quantile(
   random_numbers3, 
   seq(0, 1, length = 5)
 )
+
 random_numbers3_breaks <- as.numeric(
   cut(
     random_numbers3, 
@@ -45,7 +46,10 @@ random_numbers3_breaks <- as.numeric(
   )
 )
 
-colors <- wesanderson::wes_palette("Zissou1", 4)
+
+colors <- RColorBrewer::brewer.pal(4, "Set1")
+
+
 
 point_color <- colors[random_numbers3_breaks]
 plot(
