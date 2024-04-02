@@ -50,7 +50,6 @@ random_numbers3_breaks <- as.numeric(
 colors <- RColorBrewer::brewer.pal(4, "Set1")
 
 
-
 point_color <- colors[random_numbers3_breaks]
 plot(
   x = random_numbers1, y = random_numbers2,
